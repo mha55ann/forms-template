@@ -109,7 +109,7 @@ input::placeholder {
 /* MOBILE OPTIMIZATION */
 @media (max-width: 600px) {
   .container {
-    padding: 35px 25px;   /* waaay more breathable on mobile */
+    padding: 10px 10px;   /* waaay more breathable on mobile */
     border-radius: 20px;
     max-width: 95%;
   }
@@ -137,3 +137,4 @@ input::placeholder {
     gap: 22px; /* slightly tighter spacing on mobile */
   }
 }
+
