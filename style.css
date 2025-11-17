@@ -106,3 +106,34 @@ input::placeholder {
   color: #b4bac3;
   font-style: italic;
 }
+/* MOBILE OPTIMIZATION */
+@media (max-width: 600px) {
+  .container {
+    padding: 35px 25px;   /* waaay more breathable on mobile */
+    border-radius: 20px;
+    max-width: 95%;
+  }
+
+  .icon {
+    width: 80px;
+  }
+
+  .h_1 {
+    font-size: 1.6rem;   /* fits better */
+  }
+
+  input,
+  button {
+    padding: 14px 16px;
+    font-size: 0.95rem;
+    border-radius: 14px;
+  }
+
+  label {
+    font-size: 0.95rem;
+  }
+
+  .form {
+    gap: 22px; /* slightly tighter spacing on mobile */
+  }
+}
