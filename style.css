@@ -111,7 +111,7 @@ input::placeholder {
   .container {
     padding: 10px 10px;   /* waaay more breathable on mobile */
     border-radius: 20px;
-    max-width: 95%;
+    min-width: 95%;
   }
 
   .icon {
@@ -137,4 +137,5 @@ input::placeholder {
     gap: 22px; /* slightly tighter spacing on mobile */
   }
 }
+
 
