@@ -41,7 +41,12 @@ body {
   font-weight: 400;
   letter-spacing: -0.2px;
   line-height: var(--body-lineheight);
-  background: var(--ny-gradient);
+  background: linear-gradient(
+    to bottom,
+    #E8F4F2 0%,   /* Soft Teal — top */
+    #F7F9FC 50%,  /* Light Sky — middle */
+    #FFF8F1 100%  /* Warm Sunrise Mist — bottom */
+  );
   color: var(--ny-text-dark);
   display: flex;
   justify-content: center;
@@ -297,3 +302,4 @@ button:focus {
     flex-direction: column;
   }
 }
+
