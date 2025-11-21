@@ -144,7 +144,7 @@ input::placeholder {
 .radio-group {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  
   margin-top: 5px;
 }
 
@@ -224,3 +224,4 @@ button:hover {
     gap: 12px;
   }
 }
+
