@@ -8,20 +8,379 @@
   </head>
   <body>
     <div class="container">
-      <img class="icon" src="logo.png" alt="sunrise icon" />
+      <img
+        class="icon"
+        src="https://storage.tally.so/42905490-cb44-48d0-9643-669111a4c4e0/Nyumba-Yetu-Favicon.png"
+        alt="sunrise icon"
+      />
 
       <h1 class="h_1">Existential Consultation Questionnaire</h1>
+      <p class="para">
+        This questionnaire helps you reflect on your life, values, and
+        experiences. There are no right or wrong answers just honesty. The more
+        real you are, the more meaningful your healing becomes.
+      </p>
       <hr />
 
       <form class="form">
-        <label>1. How are you feeling today?</label>
-        <input type="text" placeholder="Share your thoughts..." />
+        <!-- SECTION 1 -->
+        <h1 class="section-title">
+          SECTION 1
+          <span class="sub">Personal Details (Confidential)</span>
+        </h1>
 
-        <label>2. What has been weighing on your mind recently?</label>
-        <input type="text" placeholder="Take your time..." />
+        <div class="field">
+          <label>1. Full Name <span class="req">*</span></label>
+          <input
+            type="text"
+            name="fullName"
+            required
+            placeholder="Enter your full name"
+          />
+        </div>
 
-        <label>3. When was the last time you felt truly at ease?</label>
-        <input type="text" placeholder="Reflect on this moment..." />
+        <div class="field">
+          <label>2. Phone Number (WhatsApp) <span class="req">*</span></label>
+          <input
+            type="tel"
+            name="phone"
+            required
+            placeholder="e.g. 03001234567"
+          />
+        </div>
+
+        <div class="field">
+          <label>3. Preferred Contact Method <span class="req">*</span></label>
+          <input
+            type="text"
+            name="contactMethod"
+            required
+            placeholder="Call / WhatsApp / SMS"
+          />
+        </div>
+
+        <div class="field">
+          <label
+            >4. Do you want support after your ECQ submission?
+            <span class="req">*</span></label
+          >
+          <input type="text" name="support" required placeholder="Yes / No" />
+        </div>
+
+        <hr />
+
+        <!-- SECTION 2 -->
+        <h1 class="section-title">
+          SECTION 2
+          <span class="sub">Grounding the Self</span>
+        </h1>
+
+        <div class="field">
+          <label
+            >5. Which age range best describes you?
+            <span class="req">*</span></label
+          >
+          <div class="radio-group">
+            <label class="radio-option"
+              ><input type="radio" name="ageRange" value="18-25" required />
+              18-25</label
+            >
+            <label class="radio-option"
+              ><input type="radio" name="ageRange" value="26-35" required />
+              26-35</label
+            >
+            <label class="radio-option"
+              ><input type="radio" name="ageRange" value="36-45" required />
+              36-45</label
+            >
+            <label class="radio-option"
+              ><input type="radio" name="ageRange" value="46+" required />
+              46+</label
+            >
+          </div>
+        </div>
+
+        <div class="field">
+          <label>6. What motivated you to seek support through ECQ? </label>
+          <input type="text" name="motivation" placeholder="Your answer" />
+        </div>
+
+        <div class="field">
+          <label>7. Over the past month, how have you felt emotionally? </label>
+          <div class="radio-group">
+            <label class="radio-option"
+              ><input type="radio" name="emotions" value="happy" /> Happy</label
+            >
+            <label class="radio-option"
+              ><input type="radio" name="emotions" value="content" />
+              Content</label
+            >
+            <label class="radio-option"
+              ><input type="radio" name="emotions" value="anxious" />
+              Anxious</label
+            >
+            <label class="radio-option"
+              ><input type="radio" name="emotions" value="depressed" />
+              Depressed</label
+            >
+            <label class="radio-option"
+              ><input type="radio" name="emotions" value="overwhelmed" />
+              Overwhelmed</label
+            >
+            <label class="radio-option"
+              ><input type="radio" name="emotions" value="other" /> Other</label
+            >
+          </div>
+        </div>
+
+        <hr />
+
+        <!-- SECTION 3 -->
+        <h1 class="section-title">
+          SECTION 3
+          <span class="sub">Meaning & Direction</span>
+        </h1>
+
+        <div class="field">
+          <label
+            >8. How would you describe your sense of purpose right now?
+            <span class="req">*</span></label
+          >
+          <div class="radio-group">
+            <label class="radio-option"
+              ><input type="radio" name="purpose" value="veryStrong" required />
+              Very Strong</label
+            >
+            <label class="radio-option"
+              ><input
+                type="radio"
+                name="purpose"
+                value="somewhatStrong"
+                required
+              />
+              Somewhat Strong</label
+            >
+            <label class="radio-option"
+              ><input type="radio" name="purpose" value="uncertain" required />
+              Uncertain</label
+            >
+            <label class="radio-option"
+              ><input type="radio" name="purpose" value="lacking" required />
+              Lacking</label
+            >
+          </div>
+        </div>
+
+        <div class="field">
+          <label>9. What gives your life meaning right now? </label>
+          <input type="text" name="lifeMeaning" placeholder="Your answer" />
+        </div>
+
+        <div class="field">
+          <label
+            >10. What do you believe your life is preparing you for?
+          </label>
+          <input type="text" name="preparation" placeholder="Your answer" />
+        </div>
+        <hr />
+
+        <!--     checkout here    -->
+        <h1 class="section-title">
+          SECTION 4
+          <span class="sub">Emotional Awareness & Inner Truth</span>
+        </h1>
+
+        <!-- Q11 -->
+        <label>
+          11. What emotion do you hide most from others?
+          <span class="req">*</span>
+        </label>
+        <input
+          type="text"
+          name="hiddenEmotion"
+          required
+          placeholder="Type your emotion"
+        />
+
+        <!-- Q12 -->
+        <div class="field">
+          <label>
+            12. Have you had thoughts of harming yourself or others recently?
+            <span class="req">*</span>
+          </label>
+          <div class="radio-group">
+            <label class="radio-option">
+              <input type="radio" name="harmThoughts" value="yes" required />
+              Yes
+            </label>
+            <label class="radio-option">
+              <input type="radio" name="harmThoughts" value="no" required /> No
+            </label>
+          </div>
+        </div>
+
+        <!-- Q13 -->
+        <label>13. What truth about your life have you been avoiding?</label>
+        <input type="text" name="avoidedTruth" placeholder="Type your truth" />
+
+        <h1 class="section-title">
+          SECTION 5
+          <span class="sub">Relationships & Belonging</span>
+        </h1>
+
+        <!-- Q14 -->
+        <div class="field">
+          <label>
+            14. Who do you usually turn to for support when facing challenges?
+            <span class="req">*</span>
+          </label>
+          <div class="radio-group">
+            <label class="radio-option">
+              <input
+                type="radio"
+                name="supportPerson"
+                value="family"
+                required
+              />
+              Family
+            </label>
+            <label class="radio-option">
+              <input
+                type="radio"
+                name="supportPerson"
+                value="friends"
+                required
+              />
+              Friends
+            </label>
+            <label class="radio-option">
+              <input
+                type="radio"
+                name="supportPerson"
+                value="community"
+                required
+              />
+              Community / Faith Group
+            </label>
+            <label class="radio-option">
+              <input type="radio" name="supportPerson" value="none" required />
+              None of the above
+            </label>
+          </div>
+        </div>
+
+        <!-- Q15 -->
+        <div class="field">
+          <label
+            >15. What kind of love or support do you wish you had more
+            of?</label
+          >
+          <input
+            type="text"
+            name="desiredSupport"
+            placeholder="Type your answer"
+          />
+        </div>
+
+        <h1 class="section-title">
+          SECTION 6
+          <span class="sub">Action & Readiness</span>
+        </h1>
+
+        <!-- Q16 -->
+        <div class="field">
+          <label>
+            16. On a scale of 1–10, how ready are you to begin changing your
+            life?
+            <span class="req">*</span>
+          </label>
+          <div
+            class="radio-group"
+            style="flex-direction: row; flex-wrap: wrap; gap: 30px"
+          >
+            <!-- Loop not allowed here, so manual -->
+            <label class="radio-option"
+              ><input type="radio" name="readiness" value="0" required />
+              0</label
+            >
+            <label class="radio-option"
+              ><input type="radio" name="readiness" value="1" required />
+              1</label
+            >
+            <label class="radio-option"
+              ><input type="radio" name="readiness" value="2" required />
+              2</label
+            >
+            <label class="radio-option"
+              ><input type="radio" name="readiness" value="3" required />
+              3</label
+            >
+            <label class="radio-option"
+              ><input type="radio" name="readiness" value="4" required />
+              4</label
+            >
+            <label class="radio-option"
+              ><input type="radio" name="readiness" value="5" required />
+              5</label
+            >
+            <label class="radio-option"
+              ><input type="radio" name="readiness" value="6" required />
+              6</label
+            >
+            <label class="radio-option"
+              ><input type="radio" name="readiness" value="7" required />
+              7</label
+            >
+            <label class="radio-option"
+              ><input type="radio" name="readiness" value="8" required />
+              8</label
+            >
+            <label class="radio-option"
+              ><input type="radio" name="readiness" value="9" required />
+              9</label
+            >
+            <label class="radio-option"
+              ><input type="radio" name="readiness" value="10" required />
+              10</label
+            >
+          </div>
+        </div>
+
+        <!-- Q17 -->
+        <div class="field">
+          <label>17. What would “a healed you” look and feel like?</label>
+          <input
+            type="text"
+            name="healedVersion"
+            placeholder="Describe your healed self"
+          />
+        </div>
+
+        <!-- Q18 -->
+        <div class="field">
+          <label>
+            18. Would you like us to send you a personalized reflection of your
+            ECQ results?
+          </label>
+          <div class="radio-group">
+            <label class="radio-option">
+              <input type="radio" name="sendReflection" value="yes" /> Yes
+            </label>
+            <label class="radio-option">
+              <input type="radio" name="sendReflection" value="no" /> No
+            </label>
+          </div>
+        </div>
+
+        <!-- Q19 -->
+        <div class="field">
+          <label>19. Email address</label>
+          <input type="email" name="email" placeholder="Enter your email" />
+          <p style="color: #777; font-style: italic">
+            If you’d like us to send your personalized reflection, enter your
+            email.
+          </p>
+        </div>
 
         <button type="submit">Submit</button>
       </form>
