@@ -203,21 +203,28 @@ select {
   line-height: var(--body-lineheight);
   font-family: var(--body-font);
 }
-
-/* FOCUS STATE */
-input:focus,
-textarea:focus,
-select:focus {
-  border-color: var(--ny-primary);
-  box-shadow: 0 0 0 4px rgba(0, 128, 128, 0.15);
-  outline: none;
+input,
+textarea,
+select,
+button,
+input[type="submit"] {
+  transition: all 0.25s ease;
 }
-
-/* HOVER STATE */
+/* FOCUS STATE */
 input:hover,
 textarea:hover,
 select:hover {
   border-color: var(--ny-primary);
+  box-shadow: 0 0 0 3px rgba(0, 128, 128, 0.12);
+}
+
+/* Smooth Apple-style Focus */
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--ny-primary);
+  box-shadow: 0 0 0 4px rgba(0, 128, 128, 0.22);
+  outline: none;
 }
 
 /* PLACEHOLDER */
@@ -273,19 +280,22 @@ input[type="submit"] {
   font-weight: 600;
   cursor: pointer;
   transition: all 0.25s ease;
-  margin-top: 0px;
   width: 100%;
   font-family: var(--heading-font);
 }
 
-button:hover {
+/* Soft Hover */
+button:hover,
+input[type="submit"]:hover {
   background: var(--ny-primary-dark);
   transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(0, 128, 128, 0.18);
 }
-
-button:focus {
+/* Soft Focus */
+button:focus,
+input[type="submit"]:focus {
   outline: none;
-  box-shadow: 0 0 0 4px rgba(0, 128, 128, 0.3);
+  box-shadow: 0 0 0 4px rgba(0, 128, 128, 0.25);
 }
 
 /* MOBILE RESPONSIVE */
