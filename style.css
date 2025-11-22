@@ -43,9 +43,9 @@ body {
   line-height: var(--body-lineheight);
   background: linear-gradient(
     to bottom,
-    #E8F4F2 0%,   /* Soft Teal — top */
-    #F7F9FC 50%,  /* Light Sky — middle */
-    #FFF8F1 100%  /* Warm Sunrise Mist — bottom */
+    #E8F4F2 0%,
+    #F7F9FC 50%,
+    #FFF8F1 100%
   );
   color: var(--ny-text-dark);
   display: flex;
@@ -131,7 +131,6 @@ hr {
 
 .section:last-of-type {
   border-bottom: none;
-  margin-bottom: 0;
 }
 
 @keyframes fadeIn {
@@ -152,7 +151,6 @@ hr {
   font-weight: 600;
   color: var(--ny-text-dark);
   text-align: center;
-  margin-top: 0px;
 }
 
 .section-title .sub {
@@ -193,11 +191,9 @@ select {
   border: 1px solid var(--ny-grey-300);
   transition: all 0.25s ease;
   font-size: 16px;
-  line-height: var(--body-lineheight);
-  font-family: var(--body-font);
 }
 
-/* FOCUS STATE */
+/* FOCUS */
 input:focus,
 textarea:focus,
 select:focus {
@@ -206,7 +202,7 @@ select:focus {
   outline: none;
 }
 
-/* HOVER STATE */
+/* HOVER */
 input:hover,
 textarea:hover,
 select:hover {
@@ -219,12 +215,11 @@ select:hover {
   opacity: 0.9;
 }
 
-/* RADIO BUTTONS */
+/* RADIO GROUP */
 .radio-group {
   display: flex;
   flex-direction: column;
   gap: var(--space-sm);
-  margin-top: var(--space-xs);
 }
 
 .radio-option {
@@ -232,7 +227,6 @@ select:hover {
   align-items: center;
   gap: var(--space-xs);
   font-size: 16px;
-  color: var(--ny-text-dark);
   cursor: pointer;
   padding: 8px 0;
   transition: color 0.2s ease;
@@ -265,41 +259,22 @@ input[type="submit"] {
   font-size: 18px;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.25s ease;
-  margin-top: 0px;
+  margin-top: 20px;
   width: 100%;
-  font-family: var(--heading-font);
+  transition: all 0.25s ease;
 }
 
-button:hover {
+/* BUTTON HOVER */
+button:hover,
+input[type="submit"]:hover {
   background: var(--ny-primary-dark);
-  transform: translateY(-1px);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 128, 128, 0.25);
 }
 
-button:focus {
-  outline: none;
-  box-shadow: 0 0 0 4px rgba(0, 128, 128, 0.3);
+/* BUTTON ACTIVE */
+button:active,
+input[type="submit"]:active {
+  transform: translateY(0px);
+  box-shadow: none;
 }
-
-/* MOBILE RESPONSIVE */
-@media (max-width: 768px) {
-  .container {
-    padding: var(--space-lg);
-  }
-
-  .h_1,
-  .section-title {
-    font-size: 22px;
-  }
-
-  input,
-  textarea,
-  select {
-    padding: 14px 16px;
-  }
-
-  .radio-group {
-    flex-direction: column;
-  }
-}
-
